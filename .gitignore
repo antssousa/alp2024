@@ -1,0 +1,36 @@
+# Node.js
+node_modules/
+
+# Build output
+dist/
+build/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs and debugging
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+debug.log
+
+# Dependency lock files
+package-lock.json
+yarn.lock
+
+# Environment variables
+.env
+
+# Compiled files
+*.min.js
+*.min.css
+
+# Testing
+coverage/
+
+# Miscellaneous
+.DS_Store
+Thumbs.db

@@ -1,0 +1,1 @@
+alert('Alô Mundo!')

@@ -31,6 +31,8 @@ yarn.lock
 # Testing
 coverage/
 
+exemplos/
+
 # Miscellaneous
 .DS_Store
 Thumbs.db

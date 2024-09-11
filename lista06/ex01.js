@@ -1,10 +1,14 @@
-let vetor = [1, 2, 3, 4, 5, 6]
-console.log(vetor)
-console.log('Tamanho de do vetor: ' + vetor.length)
-console.log(vetor[0])
-console.log(vetor[5])
-vetor[2] = 300
-vetor[5] = 600
-console.log(vetor)
-// vetor[100] = 10000 // Não faça isso
-console.log(vetor)
+// let vetor = []
+
+// for (let i = 0; i < 10; i++) {
+//     vetor[i] = Number(prompt(`Digite ${i + 1}º número`))
+// }
+
+let vetor = prompt('Digite os números separados por vírgula').split(',').map(Number)
+
+let soma = 0
+for (let i = 0; i < vetor.length; i++) {
+    soma += vetor[i] // soma = soma + vetor[i]
+}
+
+document.write(`A soma dos elementos do vetor é ${soma}`)

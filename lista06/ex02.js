@@ -1,18 +1,22 @@
-let notas = []
-
-for(let i = 0; i < 5; i++){
-    notas[i] = Number(prompt(`Digite a nota ${i}`))
+vetor = []
+for (let i = 0; i < 10; i++) {
+    vetor[i] = Math.floor(Math.random() * 10)
 }
 
-document.write(notas + '<br> ')
+let n = Number(prompt('Digite o número que deseja encontrar'))
+document.write(vetor +  '<br>')
 
-let soma = 0
-
-for (let i = 0; i < notas.length; i++) {
-    soma = soma + notas[i]
+let achou = -1
+for (let i = 0; i < vetor.length; i++) {
+    if (n == vetor[i]){
+        achou = i
+        // break
+    } 
 }
 
-let media = soma / notas.length
+if (achou != -1){
+    document.write(`O número ${n} foi encontrado na posição ${achou}`)
+} else {
+    document.write(`O número ${n} não foi encontrado`)
 
-document.write(`A média da turma é ${media}`)
-
+}

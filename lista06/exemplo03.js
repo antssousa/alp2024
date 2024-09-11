@@ -1,0 +1,6 @@
+let vetor = prompt('Digite os números separados por vírgula')
+document.write('String com vírgulas: ' + vetor + '<br>')
+vetor = vetor.split(',')
+document.write('Vetor de strings: ' + vetor + '<br>')
+vetor = vetor.map(Number)
+document.write('Vetor de números: ' + vetor)

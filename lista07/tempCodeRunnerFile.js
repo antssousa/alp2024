@@ -1,0 +1,1 @@
+desenhar_console('*', 4)
